@@ -13,14 +13,14 @@ header {
   align-items: center;
   justify-content: center;
 }
-.navbar .icon {
-  display: none;
-}
 .navbar {
   width: 1280px;
   padding: 0px auto;
   display: flex;
   justify-content: space-between;
+}
+.navbar .icon {
+  display: none;
 }
 .navbar .logo,
 .navbar table,
@@ -349,7 +349,7 @@ footer .derecha a {
   }
   .navbar .icon {
     display: block;
-    margin-left: 25px;
+    margin-left: 20px;
     color: #707070;
     font-size: 32px;
     font-weight: 100;
@@ -363,15 +363,16 @@ footer .derecha a {
   }
   .contenedor h1 {
     font-size: 22px;
-    width: max-content;
     letter-spacing: 0px;
   }
+  /*
   .busqueda {
     padding: 10px;
     height: 100%;
-  }
+  }*/
   .busqueda h3 {
     font-size: 16px;
+    font-weight: 400;
   }
   .busqueda form {
     height: 100%;
@@ -396,10 +397,9 @@ footer .derecha a {
     height: 60px;
     border-radius: 10px;
   }
-
-  .banner {
+/*  .banner {
     align-items: center;
-  }
+  }*/
   .banner > img {
     position: relative;
     max-width: 100%;
@@ -407,11 +407,15 @@ footer .derecha a {
   }
   .banner .text {
     position: relative;
-    height: 100%;
-    margin-top: -25%;
     display: flex;
+    height: 100%;
     flex-flow: column;
-    align-items: flex-start;
+    text-align: center;
+    align-items: center;
+    margin-top: -25%;
+    margin-bottom: 70px;
+    padding-left: 40px;
+    margin-left: -100px;
   }
   .banner .text h2 {
     font-size: 24px;
@@ -446,7 +450,7 @@ footer .derecha a {
   .turnos h4{
     font-size: 12px;
     width: 229px;
-    height: 32;
+    height: 32px;
   }
   
   .especialidades {
@@ -516,8 +520,16 @@ footer .derecha a {
     height: 150px;
   }
   .banner .text{
-    margin-top: -40%;
+    height: 100%;
+    flex-flow: column;
     text-align: center;
+    align-items: center;
+    margin-top: -40%;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
   }
   .banner .text h2{
     font-size: 24px;
@@ -526,12 +538,16 @@ footer .derecha a {
   }
   .banner .text h3{
     font-size: 12px;
+    font-weight: 400;
     padding: 0px;
-    margin: 5px;
-    margin-left: -30px;
+    margin: 10px 0px;
   }
   .banner .text .boton{
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+  }
+  .banner .text .boton img{
+    padding-right: 0px;
+    padding-left: 10px;
   }
   .banner .text .boton button{
     width: 160px;
@@ -551,5 +567,10 @@ footer .derecha a {
     grid-auto-flow: column;
     grid-auto-columns: minmax(123px, 1fr);
     overflow-x: auto;
+  }
+  footer table,
+  footer table tr,
+  footer table td{
+    padding: 0px 0px 0px 0px;
   }
 }
